@@ -1,0 +1,170 @@
+// Theme tokens matching exact specifications
+export const lightTheme = {
+  background: "#F7F8FC",
+  sidebar: "#5027B5",
+  header: "#FFFFFF",
+  card: "#FFFFFF",
+  surface: "#FFFFFF",
+  secondarySurface: "#F0F3F8",
+  backgroundSecondary: "#F0F3F8",
+  elevated: "#FFFFFF",
+  inputBg: "#FFFFFF",
+  primary: "#8054E8",
+  primaryHover: "#7043D5",
+  primaryLight: "#F2EDFF",
+  primaryBorder: "#DCD0FF",
+  primaryGlow: "rgba(128, 84, 232, 0.18)",
+  accent: "#8054E8",
+  accentHover: "#7043D5",
+  accentLight: "#F2EDFF",
+  accentBorder: "#DCD0FF",
+  text: "#20243A",
+  textSecondary: "#68738A",
+  muted: "#68738A",
+  border: "#E0E5EF",
+  borderLight: "#F0F3F8",
+  borderPurple: "#DCD0FF",
+  borderPurpleHover: "#C4B5FD",
+  success: "#15803D",
+  successLight: "#DCFCE7",
+  successBorder: "#86EFAC",
+  danger: "#DC2626",
+  dangerLight: "#FEF2F2",
+  dangerBorder: "#FECACA",
+  warning: "#B45309",
+  warningLight: "#FEF3C7",
+  warningBorder: "#FDE68A",
+};
+
+export const darkTheme = {
+  background: "#0B0F19",
+  sidebar: "#431A9E",
+  header: "#131B2E",
+  card: "#131B2E",
+  surface: "#131B2E",
+  secondarySurface: "#1C263D",
+  backgroundSecondary: "#1C263D",
+  elevated: "#1C263D",
+  inputBg: "#131B2E",
+  primary: "#9B78F5",
+  primaryHover: "#B499F8",
+  primaryLight: "rgba(128, 84, 232, 0.16)",
+  primaryBorder: "rgba(155, 120, 245, 0.35)",
+  primaryGlow: "rgba(155, 120, 245, 0.25)",
+  accent: "#9B78F5",
+  accentHover: "#B499F8",
+  accentLight: "rgba(128, 84, 232, 0.16)",
+  accentBorder: "rgba(155, 120, 245, 0.35)",
+  text: "#F1F5F9",
+  textSecondary: "#94A3B8",
+  muted: "#94A3B8",
+  border: "#232D42",
+  borderLight: "#1C263D",
+  borderPurple: "rgba(155, 120, 245, 0.25)",
+  borderPurpleHover: "rgba(155, 120, 245, 0.45)",
+  success: "#34D399",
+  successLight: "rgba(52, 211, 153, 0.15)",
+  successBorder: "rgba(52, 211, 153, 0.35)",
+  danger: "#F87171",
+  dangerLight: "rgba(248, 113, 113, 0.15)",
+  dangerBorder: "rgba(248, 113, 113, 0.35)",
+  warning: "#FBBF24",
+  warningLight: "rgba(251, 191, 36, 0.15)",
+  warningBorder: "rgba(251, 191, 36, 0.35)",
+};
+
+// Reactive design system tokens driven by CSS variables
+const theme = {
+  // Brand Purples & Violets
+  primary: "var(--primary)",
+  primaryHover: "var(--primary-hover)",
+  primaryLight: "var(--primary-light)",
+  primaryBorder: "var(--primary-border)",
+  primaryDark: "var(--primary-hover)",
+  primaryGlow: "var(--primary-glow)",
+
+  // Secondary Accents
+  accent: "var(--accent)",
+  accentHover: "var(--accent-hover)",
+  accentLight: "var(--accent-light)",
+  accentBorder: "var(--accent-border)",
+
+  // Gradients
+  gradientPrimary: "var(--gradient-primary)",
+  gradientHero: "var(--gradient-hero)",
+  gradientCard: "var(--gradient-card)",
+  gradientSoft: "var(--bg-selected)",
+  gradientDarkCta: "linear-gradient(135deg, #0B1020 0%, #151E30 50%, #1D2A40 100%)",
+
+  // Surfaces & Backgrounds
+  background: "var(--bg-main)",
+  sidebar: "var(--bg-sidebar, var(--bg-surface))",
+  header: "var(--bg-header, var(--bg-nav))",
+  backgroundSecondary: "var(--bg-secondary)",
+  secondarySurface: "var(--bg-secondary)",
+  card: "var(--bg-surface)",
+  surface: "var(--bg-surface)",
+  surfaceElevated: "var(--bg-elevated)",
+  inputBg: "var(--bg-input, var(--bg-surface))",
+
+  // Borders
+  border: "var(--border-color)",
+  borderLight: "var(--border-light)",
+  borderPurple: "var(--border-purple)",
+  borderPurpleHover: "var(--border-purple-hover)",
+
+  // Typography
+  text: "var(--text-main)",
+  textSecondary: "var(--text-secondary)",
+  muted: "var(--text-muted)",
+  mutedLight: "var(--border-color)",
+
+  // Status & Feedback Colors
+  success: "var(--success)",
+  successHover: "var(--success)",
+  successLight: "var(--success-light)",
+  successBorder: "var(--success-border)",
+
+  warning: "var(--warning)",
+  warningHover: "var(--warning)",
+  warningLight: "var(--warning-light)",
+  warningBorder: "var(--warning-border)",
+
+  danger: "var(--error)",
+  dangerHover: "var(--error)",
+  dangerLight: "var(--error-light)",
+  dangerBorder: "var(--error-border)",
+
+  // Layout & Sizing
+  sidebarWidth: 260,
+  navbarHeight: 74,
+  maxWidth: 1280,
+  maxInterviewWidth: 1240,
+
+  spacing: {
+    xs: 8,
+    sm: 14,
+    md: 20,
+    lg: 28,
+    xl: 36,
+    xxl: 44,
+  },
+  radius: {
+    xs: 6,
+    sm: 8,
+    md: 12,
+    lg: 16,
+    xl: 20,
+    full: 9999,
+  },
+  shadow: {
+    sm: "var(--shadow-sm)",
+    card: "var(--shadow-card)",
+    hover: "var(--shadow-hover)",
+    elevated: "var(--shadow-elevated)",
+    glow: "var(--shadow-glow)",
+    pill: "var(--shadow-pill)",
+  },
+};
+
+export default theme;

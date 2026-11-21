@@ -1,0 +1,168 @@
+# =============================================================================
+# Intervexa AI – Smart Interview Coach & Placement Prep
+# Master Root .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Environment Variables & Secrets (CRITICAL SECURITY)
+# -----------------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Explicitly allow committing environment templates / example files
+!.env.example
+!.env.template
+
+# -----------------------------------------------------------------------------
+# 2. Python & Virtual Environments
+# -----------------------------------------------------------------------------
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+bin/
+include/
+lib/
+lib64/
+share/pyvenv.cfg
+pyvenv.cfg
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller / cx_Freeze
+*.manifest
+*.spec
+
+# -----------------------------------------------------------------------------
+# 3. Node.js & Frontend Build Outputs
+# -----------------------------------------------------------------------------
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Production and test build artifacts (Vite / React)
+dist/
+dist-test/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+
+# Package manager debug and runtime logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -----------------------------------------------------------------------------
+# 4. Testing, Coverage & Caches
+# -----------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+*.cover
+coverage/
+htmlcov/
+.nyc_output/
+.cache/
+.eslintcache
+.stylelintcache
+e2e_test_results.json
+
+# -----------------------------------------------------------------------------
+# 5. Local Databases & SQLite
+# -----------------------------------------------------------------------------
+# Local development and test databases (contain candidate PII & credentials)
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+interview_history.db
+intervexa.db
+
+# -----------------------------------------------------------------------------
+# 6. User Uploads, Resumes & Generated Reports
+# -----------------------------------------------------------------------------
+# User uploaded documents and generated evaluation exports
+uploads/
+**/uploads/*
+!**/uploads/.gitkeep
+*.pdf
+download_report
+
+# -----------------------------------------------------------------------------
+# 7. Diagnostic Logs & Error Dumps
+# -----------------------------------------------------------------------------
+*.log
+logs/
+*.txt.log
+ats_error.txt
+groq_error.txt
+
+# -----------------------------------------------------------------------------
+# 8. IDE, Editor & OS Artifacts
+# -----------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains / IntelliJ / PyCharm / WebStorm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text / Atom / Eclipse / Vim
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
